@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased p-2`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased p-2 `}
       >
         <ThemeProvider
           attribute="class"
@@ -36,7 +36,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <nav className="flex justify-end">
+          <nav className="flex justify-end mb-2">
             <ModeToggle />
           </nav>
           {children}
